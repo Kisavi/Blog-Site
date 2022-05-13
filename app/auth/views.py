@@ -1,9 +1,10 @@
 from . import auth
+from flask import render_template
 
 
 @auth.route('/register')
 def signup():
-    return "Sign Up"
+    return render_template('register.html')
 
 
 @auth.route('/register')
