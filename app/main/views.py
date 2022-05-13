@@ -1,3 +1,6 @@
-from flask import Blueprint
+from . import main
 
-views = Blueprint('views', __name__)
+
+@main.route('/')
+def home():
+    return "Hello Flask"
