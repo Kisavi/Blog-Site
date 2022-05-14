@@ -34,7 +34,7 @@ def signup():
             flash('Account created successfully.', category='success')
             return redirect(url_for('auth.login'))
 
-    return render_template('register.html')
+    return render_template('register.html', user=current_user)
 
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -47,15 +47,18 @@ def login():
         if user:
             if check_password_hash(user.password, password):
                 flash('logged in successfully!', category='success')
+                login_user(user)
                 return redirect(url_for('main.home'))
             else:
                 flash('You entered wrong credentials', category='error')
         else:
             flash('No user with such details exists', category='error')
 
-    return render_template('register.html')
+    return render_template('register.html', user=current_user)
 
 
 @auth.route('/logout')
+@login_required
 def logout():
-    return "Log out"
+    logout_user()
+    return redirect(url_for('auth.login'))
