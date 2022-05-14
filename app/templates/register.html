@@ -3,7 +3,7 @@
 <div class="cont">
 <!--  login-->
   <div class="form sign-in">
-    <form method="POST">
+    <form action="{{ url_for('auth.login') }}" method="POST">
     <h2>Welcome back,</h2>
     <label>
       <span>Email</span>
@@ -11,7 +11,7 @@
     </label>
     <label>
       <span>Password</span>
-      <input type="password" id="password" name="password1"/>
+      <input type="password" id="password" name="password"/>
     </label>
     <p class="forgot-pass">Forgot password?</p>
     <button type="submit" class="submit">Sign In</button>
@@ -35,7 +35,7 @@
     </div>
     <!-- SIGN UP -->
     <div class="form sign-up">
-      <form method="POST">
+      <form action="{{ url_for('auth.signup') }}" method="POST">
       <h2>Time to feel like home,</h2>
       <label>
         <span>Name</span>
