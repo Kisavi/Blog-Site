@@ -34,11 +34,12 @@ class Blog(db.Model):
 
 class Comment(db.Model):
     """
-    this Cooment class helps us create new comments
+    this Comment class helps us create new comments
     args: db.model which helps us connect our class to the db
     """
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(500))
+    nickname = db.Column(db.String(500))
+    content = db.Column(db.String(500))
     date = db.Column(db.DateTime(timezone=True), default=func.now())
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     blog_id = db.Column(db.Integer, db.ForeignKey('blog.id'))
