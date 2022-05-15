@@ -11,15 +11,16 @@
             <div class="card">
   <h5 class="card-header">{{blog.title}}</h5>
   <div class="card-body">
+       <p class="card-text">Author: {{blog.author}}</p>
     <p class="card-text">{{blog.content}}</p>
-      <p class="card-text">{{blog.date}}</p>
+      <p class="card-text">Posted on {{blog.date.strftime('%Y-%m-%d')}}</p>
       <div class="footer">
           <div class="comment">
     <a href="#" class="btn btn-primary">Comment</a>
               </div>
           <div class="edit">
               <a href="#" class="btn btn-primary">Edit</a>
-              <a href="#" class="btn btn-primary">Delete</a>
+              <a href="/delete/{{blog.id}}" class="btn btn-primary">Delete</a>
           </div>
           </div>
   </div>

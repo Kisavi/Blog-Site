@@ -43,3 +43,11 @@ def blogs():
     return render_template('blog_display.html', blogs=blogs)
 
 
+@main.route('/delete/<int:blog_id>', methods=['POST', 'GET'])
+@login_required
+def delete_blog(blog_id):
+    blog = Blog.query.get(blog_id)
+    db.session.delete(blog)
+    db.session.commit()
+    flash('Your post has been deleted successfully', category='success')
+    return redirect(url_for('main.blogs'))
