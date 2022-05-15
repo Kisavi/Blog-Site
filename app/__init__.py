@@ -22,7 +22,7 @@ def create_app():
     app.register_blueprint(main, url_prefix='/')
 
     # import our db object classes
-    from .models import User
+    from .models import User, Blog, Comment
 
     create_database(app)
 

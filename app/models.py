@@ -25,7 +25,7 @@ class Blog(db.Model):
     """
     id = db.Column(db.Integer, primary_key=True)
     author = db.Column(db.String(255))
-    title = db.Column(db.string(500))
+    title = db.Column(db.String(500))
     content = db.Column(db.String(10000))
     date = db.Column(db.DateTime(timezone=True), default=func.now())
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
@@ -38,7 +38,7 @@ class Comment(db.Model):
     args: db.model which helps us connect our class to the db
     """
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.string(500))
+    title = db.Column(db.String(500))
     date = db.Column(db.DateTime(timezone=True), default=func.now())
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     blog_id = db.Column(db.Integer, db.ForeignKey('blog.id'))
