@@ -1,19 +1,24 @@
 {% extends 'base.html' %}
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/register.css')}}">
+{% endblock %}
 {% block content %}
+<div class="registration">
 <div class="cont">
 <!--  login-->
   <div class="form sign-in">
     <form action="{{ url_for('auth.login') }}" method="POST">
     <h2>Welcome back,</h2>
     <label>
-      <span>Email</span>
+      <span class="spanlabel">Email</span>
       <input type="email" id="email1" name="email"/>
     </label>
     <label>
-      <span>Password</span>
+      <span class="spanlabel">Password</span>
       <input type="password" id="password" name="password"/>
     </label>
-    <p class="forgot-pass">Forgot password?</p>
+    <p class="forgot-pass spanlabel">Forgot password?</p>
     <button type="submit" class="submit">Sign In</button>
 
       </form>
@@ -38,24 +43,25 @@
       <form action="{{ url_for('auth.signup') }}" method="POST">
       <h2>Time to feel like home,</h2>
       <label>
-        <span>Name</span>
+        <span class="spanlabel">Name</span>
         <input type="text" id="username" name="username"/>
       </label>
       <label>
-        <span>Email</span>
+        <span class="spanlabel">Email</span>
         <input type="email" id="email" name="email"/>
       </label>
       <label>
-        <span>Password</span>
+        <span class="spanlabel">Password</span>
         <input type="password" id="password1" name="password1"/>
       </label>
          <label>
-        <span>Confirm Password</span>
+        <span class="spanlabel">Confirm Password</span>
         <input type="password" id="password2" name="password2"/>
       </label>
       <button type="submit" class="submit">Sign Up</button>
     </form>
     </div>
   </div>
+</div>
 </div>
 {% endblock%}
