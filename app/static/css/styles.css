@@ -1,9 +1,9 @@
 body {
-  background: #8c9da0;
+  background: #d2e6e9;
 }
 
 /* navbar */
-.navbar {
+.navbar:hover {
   background: #d5dfe1 !important;
 }
 
@@ -19,20 +19,22 @@ body {
 }
 .quote-card {
  margin-top: 13em;
- background: #d5dfe1;
+ background: #c1d4d7;
+ border-radius: 0.4em;
+ box-shadow: inset 9.91px 9.91px 15px #B0C1C4, inset -9.91px -9.91px 15px #D2E7EA;
 }
 
 .quote-container {
-  /* background: url(../images/bgs.jpg); */
-  background: #829092;
+  background: #c1d4d7;background: #d2e6e9;
+  border-radius: 100%;
+  box-shadow: inset 9.91px 9.91px 15px #BFD1D4, inset -9.91px -9.91px 15px #E5FBFE;
   background-position: center;
   background-size: cover;
   height: 92vh;
 }
 
 .blog-container {
-  /* background: url(../images/savy2.jpg); */
-  background: #6f7e80;
+  background: #a3b4b7;
   background-position: center;
   background-size: cover;
   height: 92vh;
@@ -44,4 +46,23 @@ body {
 
 .blog-cont p {
   font-size: larger;
+}
+
+/* blog form */
+.blog-form {
+  margin-top: 1.5em;
+  padding: 1em;
+  background: #d2e6e9;
+  border-radius: 0.5em;
+  box-shadow: inset 9.91px 9.91px 15px #BFD1D4, inset -9.91px -9.91px 15px #E5FBFE;
+}
+
+.submit {
+  background: #d2e6e9;
+  border-radius: 0.3em;
+  box-shadow: inset 9.91px 9.91px 15px #BFD1D4, inset -9.91px -9.91px 15px #E5FBFE;
+}
+
+.submit:hover {
+  border-color: #24302e;
 }
