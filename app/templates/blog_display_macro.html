@@ -13,8 +13,8 @@
   <h5 class="card-header">{{blog.title}}</h5>
   <div class="card-body">
     <p class="card-text">{{blog.content}}</p>
-    <p class="card-text"><span>By:</span> {{blog.author}}</p>
-      <p class="card-text"><span>{{blog.date.strftime('%Y-%m-%d')}}</span></p>
+    <p class="card-text"><span class="span1">By:</span> {{blog.author}}</p>
+      <p class="card-text"><span class="span1">{{blog.date.strftime('%Y-%m-%d')}}</span></p>
       <div class="footer">
           <div class="comment-footer">
                  <a href="/comment/{{blog.id}}"><button class="btn comment-button"><i class="bi bi-chat-quote"></i></button></a>

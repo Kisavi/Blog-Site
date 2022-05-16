@@ -55,13 +55,13 @@ body {
   box-shadow: inset 9.91px 9.91px 15px #BFD1D4, inset -9.91px -9.91px 15px #E5FBFE;
 }
 
-.submit {
+.submit1 {
   background: #d2e6e9;
   border-radius: 0.3em;
   box-shadow: inset 9.91px 9.91px 15px #BFD1D4, inset -9.91px -9.91px 15px #E5FBFE;
 }
 
-.submit:hover {
+.submit1:hover {
   border-color: #24302e;
 }
 
@@ -82,7 +82,7 @@ body {
   margin-bottom: 1.5em;
 }
 
-span {
+.span1 {
   color: grey;
   font-style: italic;
 }
@@ -93,7 +93,7 @@ span {
   align-items: center;
 }
 
-.comment-button {
+.comment-button,.comment-button1 {
   font-size: x-large;
 }
 
@@ -115,4 +115,9 @@ span {
 
 .red:hover {
   color: red;
+}
+
+/* comment section */
+.user-comments {
+  margin-top: 4.5em;
 }
