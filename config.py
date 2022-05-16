@@ -1,10 +1,13 @@
 import os
+
+
 # parent Config class contains configurations that are used in both production and development stages.
 class Config:
     '''
     General configuration parent class
     '''
 
+    QUOTE_API__URL = 'http://quotes.stormconsultancy.co.uk/random.json'
 
 
 # ProdConfig subclass contains configurations that are used in production stages of our application and inherits from the parent Config class.
@@ -34,4 +37,3 @@ config_options = {
     'development': DevConfig,
     'production': ProdConfig
 }
-
