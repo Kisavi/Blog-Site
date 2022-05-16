@@ -44,3 +44,9 @@ class Comment(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     blog_id = db.Column(db.Integer, db.ForeignKey('blog.id'))
 
+
+# define how i want to get my data from the api
+class Quote:
+    def __init__(self, author, quote):
+        self.author = author
+        self.quote = quote

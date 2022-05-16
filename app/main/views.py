@@ -3,12 +3,14 @@ from flask import render_template, request, flash, redirect, url_for
 from flask_login import login_required, current_user
 from ..models import Blog, Comment
 from app import db
+from ..request import get_quote
 
 
 @main.route('/')
 @login_required
 def home():
-    return render_template('home.html', user=current_user)
+    quote = get_quote()
+    return render_template('home.html', user=current_user, quote=quote)
 
 
 @main.route('/quote')
@@ -89,3 +91,6 @@ def delete_comment(comment_id):
     db.session.commit()
     flash('Comment has been deleted successfully', category='success')
     return redirect(url_for('main.comments'))
+
+
+
