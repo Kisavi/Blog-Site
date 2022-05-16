@@ -25,11 +25,9 @@ body {
 }
 
 .quote-container {
-  background: #c1d4d7;background: #d2e6e9;
-  border-radius: 100%;
-  box-shadow: inset 9.91px 9.91px 15px #BFD1D4, inset -9.91px -9.91px 15px #E5FBFE;
-  background-position: center;
-  background-size: cover;
+  background: #c1d4d7;
+  /* background: #d2e6e9;
+  box-shadow: inset 9.91px 9.91px 15px #BFD1D4, inset -9.91px -9.91px 15px #E5FBFE; */
   height: 92vh;
 }
 
@@ -65,4 +63,56 @@ body {
 
 .submit:hover {
   border-color: #24302e;
+}
+
+/* blog section */
+.blogs-container {
+  border: 1px solid red;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.b-header {
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.b-card {
+  margin-bottom: 1.5em;
+}
+
+span {
+  color: grey;
+  font-style: italic;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-button {
+  font-size: x-large;
+}
+
+.comment-button:hover {
+  border: 1px solid black;
+}
+
+.green {
+  color: green;
+}
+
+.green:hover {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.red:hover {
+  color: red;
 }
