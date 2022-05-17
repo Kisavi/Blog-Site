@@ -27,7 +27,7 @@
 
 | Inputs | Description  |
 |---|---|
-|  Author | Pitch different categories eg; ``pickup lines``  |
+|  Author | Blog author  |
 |  Blog title| brief title of the blog|
 |  Blog details| The actual blog body|
 | Comment| A comment on the blog|
