@@ -16,6 +16,7 @@
     background: none;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
   }
+
   
   .tip {
     font-size: 20px;
@@ -219,6 +220,10 @@
     margin-bottom: 20px;
     background: #d4af7a;
     text-transform: uppercase;
+  }
+
+  .btn3 {
+    background: rgb(78, 55, 55);
   }
   
   .fb-btn {
